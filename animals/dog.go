@@ -1,10 +1,13 @@
 package animals
 
+import (
+	"fmt"
+)
 
-func dog_feed() string {
-	return "dogfood"
+
+func dogfeed() {
+	fmt.Println("dogfood")
 }
-
 
 
 
