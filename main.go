@@ -2,14 +2,14 @@ package main
 
 import (
     "fmt"
-    "lab/animals"
+    "./animals"
 
 )
 
 
 func main() {
     fmt.Printf("%v",1)
-    dog.dogfeed()
+    animals.Dogfeed()
 }
 
 

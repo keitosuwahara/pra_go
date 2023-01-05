@@ -5,7 +5,7 @@ import (
 )
 
 
-func dogfeed() {
+func Dogfeed() {
 	fmt.Println("dogfood")
 }
 
