@@ -3,15 +3,22 @@ package readtxt
 import (
 	"fmt"
 	"os"
-	"io/ioutil"
 )
 
-func Read() {
-	file, err := os.Open("../files/test.txt")
+func Readmain(filepath string) {
+	file, err := os.Open(filepath)
 	if err != nil {
-		fmt.Println("ファイルが読み込めませんでした。")
-		os.Exit(1)
+		fmt.Println(err, "です")
 	}
-	data, err := ioutil.ReadAll(file)
-	fmt.Println(string(data))
+	//deferで関数の終了時にファイルを閉じる	
+	defer file.Close()
+
+	buf1 := make([]byte, 10)
+	buf2 := make([]byte, 10)
+
+	file.Read(buf1)
+	fmt.Println(string(buf1))
+
+	file.ReadAt(buf2, 10)
+	fmt.Println(string(buf2))
 }

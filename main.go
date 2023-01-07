@@ -4,6 +4,7 @@ import (
     "fmt"
     "pra_go/animals"
     "strconv"
+    "pra_go/readtxt"
 )
 
 /*
@@ -59,6 +60,8 @@ func main() {
             break
         }
         fmt.Println(lang)
+
+        readtxt.Readmain("./files/test.txt")
     }
 
     /*
