@@ -64,6 +64,9 @@ func main() {
         readtxt.Readmain("./files/test.txt")
     }
 
+
+    
+    
     /*
     switch文
     var  lang = "jav"
