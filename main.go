@@ -13,7 +13,7 @@ type Person struct {
 */
 
 func main() {
-    println("fmt.Printf実行")
+    println("fmt.Printf")
     fmt.Printf("%b", 1010)
 }
 
