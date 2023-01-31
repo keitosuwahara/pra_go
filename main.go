@@ -14,15 +14,7 @@ import (
 var s = ""
 
 func init() {
-	s = "このinit関数は"
-}
-
-func init() {
-	s = s + "main関数より"
-}
-
-func init() {
-	s = s + "先に実行される\nそれは初期化用の関数なため"
+	s = "このinit関数はmain関数より先に実行される\nそれは初期化用の関数なため"
 }
 
 func main() {
