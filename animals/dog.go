@@ -7,6 +7,8 @@ import (
 
 func Dogfeed() {
 	fmt.Println("dogfood")
+	const SuperFeed = "banana"
+	
 }
 
 
