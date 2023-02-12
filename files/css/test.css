@@ -1,0 +1,12 @@
+h1 {
+    color: brown;
+}
+
+#text {
+    font-size: 30;
+}
+
+.classSelecter {
+    background-color: green;
+    color: #fff;
+}
