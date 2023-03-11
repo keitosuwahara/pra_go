@@ -23,8 +23,10 @@ func main()	 {
 	router.GET("/login", routes.Login)
 	router.GET("/signup", routes.SignUp)
 	router.NoRoute(routes.NoRoute)
+	var port string = ":8080"//ポート番号の宣言
+	println("\n your localhost => http://localhost"+port+"\n")
 
-    router.Run(":8080")
+    router.Run(port)
 }
 
 
